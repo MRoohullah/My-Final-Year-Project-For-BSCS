@@ -1,0 +1,12 @@
+body {
+    background-image: url("images/background.jpg");
+    /* opacity: 0.9; */
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+.hadith-div{
+    height: 1300px;
+    border: 1px solid gray;
+    overflow: auto;
+
+}

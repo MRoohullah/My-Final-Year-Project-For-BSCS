@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/quran.png" type="image/x-icon">
+
+
+    <!-- bootstrap offline -->
+    <link rel="stylesheet"
+        href="E:\first web\projects\bootstrap css html project\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="hadith.css">
+    <title>Hadith</title>
+    <style>
+        .title4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    border-bottom: 5px solid #000;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <nav
+        class="navbar navbar-expand-lg navbar-light bg-light  border-bottom border-info border-top border-1 border-info ">
+        <div class="container">
+            <img src="images//img1.png" class="img-fluid fw-bold" width="60" alt="The Holy Quran">
+            <span class="fw-bold"> Online Quran Translation</span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto " style="font-size: 18px;;">
+                    <li class="nav-item">
+                        <a class="nav-link  fw-bold" aria-current="page" href="Home.html"><i
+                                class="bi bi-house-door"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Reading.html"><i class="bi bi-book"></i> Reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Urdu.html"><i class="bi bi-book-half"></i> Urdu
+                            translation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  fw-bold active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"> Sunan Abi Dawud
+                        </a>
+                        <ul class="dropdown-menu shadow-lg text-left" >
+                            <li><a value="1" id="m"
+                                    class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#"
+                                    onclick="sections(1)">
+                                   1 &nbsp;Purification <span class="text-info">(Kitab Al-Taharah)</span>  </a>
+                            </li>
+                            <li><a value="2" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#"
+                                    onclick="sections(2)">
+                                    2  &nbsp;Prayer <span class="text-info">(Kitab Al-Salat)</span></a>
+                            </li>
+                            <li><a value="3" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(3)">
+                                3  &nbsp;The Book Of The Prayer For Rain <br><span class="text-info">(Kitab al-Istisqa')</span></a>
+                            </li>
+                            <li><a value="4" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold   " href="#" onclick="sections(4)">4  &nbsp;Prayer <span class="text-info">(Kitab Al-Salat)</span>: <br>Detailed Rules of Law about the<br> Prayer during Journey</a>
+                            </li>
+                            <li><a value="5" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(5)">5  &nbsp;Prayer <span class="text-info">(Kitab Al-Salat)</span>: Voluntary Prayers</a>
+                            </li>
+                            <li><a value="6" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(6)">6  &nbsp;Prayer <span class="text-info">(Kitab Al-Salat)</span><br>:Detailed Injunctions about Ramadan</a>
+                            </li>
+                            <li><a value="7" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(7)">7  &nbsp;Prayer <span class="text-info">(Kitab Al-Salat)</span>: Prostration while <br>reciting the Qur'an</a>
+                            </li>
+                            <li><a value="8" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(8)">8  &nbsp;Prayer <span class="text-info">(Kitab Al-Salat)</span>: Detailed <br>Injunctions about Witr</a>
+                            </li>
+                            <li><a value="9" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(9)">
+                               9 &nbsp;Zakat <span class="text-info">(Kitab Al-Zakat)</span></a>
+                            </li>
+                            <li><a value="10" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(10)">
+                                10  &nbsp;The Book of <span class="text-info">Lost and Found Items</span>
+                                    </a></li>
+                            <li><a value="11" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(11)">11  &nbsp;The Rites of Hajj <br><span class="text-info">(Kitab Al-Manasik Wa'l-Hajj)</span>
+                                    </a></li>
+                            <li><a value="12" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(12)">12  &nbsp;Marriage <span class="text-info">(Kitab Al-Nikah)</span>
+
+                                    </a></li>
+                            <li><a value="13" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(13)">13  &nbsp;Divorce <span class="text-info">(Kitab Al-Talaq)</span>
+
+                                    </a></li>
+                            <li><a value="14" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(14)">14  &nbsp;Fasting <span class="text-info">(Kitab Al-Siyam)</span>
+
+                                    </a></li>
+                            <li><a value="15" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(15)">15  &nbsp;Jihad <span class="text-info">(Kitab Al-Jihad)</span>
+
+                                    </a></li>
+                            <li><a value="16" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(16)">16  &nbsp;Sacrifice <span class="text-info">(Kitab Al-Dahaya)</span>
+
+                                    </a></li>
+                            <li><a value="17" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(17)">17  &nbsp;Game <span class="text-info">(Kitab Al-Said)</span>
+
+                                    </a></li>
+                            <li><a value="18" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(18)">18  &nbsp;Wills <span class="text-info">(Kitab Al-Wasaya)</span>
+
+                                    </a></li>
+                            <li><a value="19" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(19)">19  &nbsp;Shares of Inheritance <span class="text-info">(Kitab Al-Fara'id)</span>
+
+                                    </a></li>
+                            <li><a value="20" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(20)">20  &nbsp;Tribute, Spoils, and Rulership <br><span class="text-info">(Kitab Al-Kharaj, Wal-Fai' Wal-Imarah)</span>
+
+                                    </a></li>
+                            <li><a value="21" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(21)">
+                                21  &nbsp; Funerals <span class="text-info">(Kitab Al-Jana'iz)</span>
+                                    </a></li>
+                            <li><a value="22" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(22)">22  &nbsp;Oaths and Vows <br><span class="text-info">(Kitab Al-Aiman Wa Al-Nudhur)</span>
+                                    </a></li>
+                            <li><a value="23" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(23)">23  &nbsp;Commercial Transactions <span class="text-info">(Kitab Al-Buyu)</span>
+
+                                    </a></li>
+                            <li><a value="24" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(24)">24  &nbsp;Wages <span class="text-info">(Kitab Al-Ijarah)</span>
+
+                                    </a></li>
+                            <li><a value="25" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(25)">25  &nbsp;The Office of the Judge <span class="text-info">(Kitab Al-Aqdiyah)</span>
+
+                                    </a></li>
+                            <li><a value="26" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(26)">26  &nbsp;Knowledge  <span class="text-info" >(Kitab Al-Ilm)</span>
+
+                                    </a></li>
+                            <li><a value="27" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(27)">27  &nbsp;Drinks  <span class="text-info">(Kitab Al-Ashribah)</span>
+
+                                    </a></li>
+                            <li><a value="28" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(28)">28  &nbsp;
+                                Foods  <span class="text-info">(Kitab Al-At'imah)</span> 
+
+                                    </a></li>
+                            <li><a value="29" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(29)">29  &nbsp;Medicine  <span class="text-info">(Kitab Al-Tibb)</span>
+
+                                    </a></li>
+                            <li><a value="30" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(30)">30  &nbsp;Divination and Omens<br>  <span class="text-info">(Kitab Al-Kahanah Wa Al-Tatayyur)</span>
+
+                                    </a></li>
+                            <li><a value="31" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(31)">31  &nbsp; The Book of  <span class="text-info">Manumission of Slaves</span> 
+
+
+                                    </a></li>
+                            <li><a value="32" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(32)">32  &nbsp;Dialects and Readings of the Qur'an <br> <span class="text-info">(Kitab Al-Huruf Wa Al-Qira'at)</span>
+
+                                    </a></li>
+                            <li><a value="33" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(33)">33  &nbsp;Hot Baths  <span class="text-info">(Kitab Al-Hammam)</span>
+
+                                    </a></li>
+                            <li><a value="34" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(34)">34  &nbsp;Clothing  <span class="text-info">(Kitab Al-Libas)</span>
+
+                                    </a></li>
+                            <li><a value="35" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(35)">35  &nbsp;Combing the Hair  <span class="text-info">(Kitab Al-Tarajjul)</span>
+
+                                    </a></li>
+                            <li><a value="36" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(36)">36  &nbsp;Signet-Rings  <span class="text-info">(Kitab Al-Khatam)</span> 
+
+                                    </a></li>
+                            <li><a value="37" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(37)">37  &nbsp;Trials and Fierce Battles<br>  <span class="text-info">(Kitab Al-Fitan Wa Al-Malahim)</span> 
+
+                                    </a></li>
+                            <li><a value="38" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(38)">38  &nbsp;The Promised Delivererspan  <span class="text-info">(Kitab Al-Mahdi)</span> 
+
+                                    </a></li>
+                            <li><a value="39" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(39)">39  &nbsp;Battles  <span class="text-info">(Kitab Al-Malahim)</span> 
+
+                                    </a></li>
+                            <li><a value="40" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(40)">40  &nbsp;Prescribed Punishments  <span class="text-info">(Kitab Al-Hudud)</span>
+
+                                    </a></li>
+                            <li><a value="41" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(41)">41  &nbsp;Types of Blood-Wit  <span class="text-info">(Kitab Al-Diyat)</span>
+
+                                    </a></li>
+                            <li><a value="42" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(42)">42  &nbsp;Model Behavior of the Prophet <br> <span class="text-info">(Kitab Al-Sunnah)</span>
+
+                                    </a></li>
+                            <li><a value="43" id="m" class="dropdown-item border border-botton border-info p-2 fs-5 fw-bold  " href="#" onclick="sections(43)">43  &nbsp;General Behavior  <span class="text-info">(Kitab Al-Adab)</span>
+
+                                    </a></li>
+                            
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link fw-bold" href="About.html"><i class="bi bi-file-person-fill"></i> About
+                            Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Privacy.html"><i class="bi bi-shield-check"></i> Privacy</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End of Navigation -->
+
+
+    <!-- translation section start -->
+    <div class="container bg-light  border border-1 border-primary" style="padding:80px">
+        <h2>Sunan <span class="text-info">Abi</span> Dawud</h2>
+        <p class="fs-4">
+            Sunan Abi Dawud is a collection of hadith compiled by Imam Abu Dawud Sulayman ibn al-Ash'ath as-Sijistani
+            (rahimahullah). It is widely considered to be among the six canonical collections of hadith (Kutub
+            as-Sittah) of
+            the Sunnah of the Prophet (ﷺ). It consists of 5274 ahadith in 43 books.
+        </p>
+        <div class="container mt-4">
+            <div class="row p-2 border border-info">
+                <div class="col-6  ">Name</div>
+                <div class="col-6 fw-bold">Sunan Abu-Dawud</div>
+            </div>
+            <div class="row p-2 border border-info">
+                <div class="col-6 ">Author Name</div>
+                <div class="col-6 fw-bold">Abu Dawud al-Sijistani</div>
+            </div>
+            <div class="row p-2 border border-info">
+                <div class="col-6 ">Book</div>
+                <div class="col-6 fw-bold">Hadiths</div>
+            </div>
+            <div class="row p-2 border border-info">
+                <div class="col-6 ">Total Section</div>
+                <div class="col-6 fw-bold">Fourthy Three</div>
+            </div>
+            <div class="row p-2 border border-info">
+                <div class="col-6 ">Section Number</div>
+                <div class="col-6 fw-bold"><span id="sectionNumber"></span></div>
+            </div>
+            <div class="row p-2 border border-info">
+                <div class="col-6 ">Section Name</div>
+                <div class="col-6 fw-bold"><span id="bookName"></span></div>
+            </div>
+            <div class="row p-2 border border-info">
+                <div class="col-6 ">Total Hadiths</div>
+                <div class="col-6 fw-bold"><span id="totalHadith"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid mt-1 mb-1">
+        <div class="container card  bg-light  border border-1 border-primary border-top-1" id="para">
+            <div class="card-body text-center fs-3 fw-bold ">
+                <h3 class="fw-bold title4" >Book Title</h3>
+                <h4 id="hadithBookName" class="text-info"></h4>
+            </div>
+
+            <!-- <div class="container card mt-2 mb-3" >
+                <div class="card-body">
+                    <h3>Purification (Kitab Al-Taharah) <span class="text-info">كتاب الطهارة</span></h3>
+                </div>                
+            </div>
+            <div class="container card mt-2 mb-3" >
+                <div class="card-body">
+                    <h3>Purification (Kitab Al-Taharah) <span class="text-info">كتاب الطهارة</span></h3>
+                </div>                
+            </div>  -->
+
+
+        </div>
+
+    </div>
+    <div class="container mb-1 p-4 bg-light  border border-1 border-primary" id="hadithdiv"></div>
+
+    <!-- <div class="container">
+        <button onclick="myfun1();" class="btn btn-info mt-2 mb-2" id="my-btn">Load More<i
+                class="bi bi-arrow-down"></i></button>
+        <button onclick="myfun2();" class="btn btn-info mt-2 mb-2" id="my-btn2">Load More<i
+                class="bi bi-arrow-down"></i></button>
+        <button onclick="myfun3();" class="btn btn-info mt-2 mb-2" id="my-btn3">Show All<i
+                class="bi bi-arrow-down"></i></button>
+        <div class="alert alert-info alert-dismissible fade show" role="alert" id="alert1">
+            <strong>Warning!</strong> You have reached to the end of the book.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+
+    </div> -->
+
+
+
+    <!-- translation section end -->
+
+    <!-- footer with links -->
+    <div class="container-fluid text-white pt-5 pb-2 fs-4" style="background-color:rgba(0,0,0,0.7) ;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3 col-sm-6 pb-3"><a href="Home.html"
+                        class="link-info fw-bold text-decoration-none">Home</a></div>
+                <div class="col-lg-3 col-sm-6"><a href="Reading.html"
+                        class="link-info fw-bold text-decoration-none">Reading</a></div>
+                <div class="col-lg-1"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3 col-sm-6 pb-3"><a href="Urdu.html"
+                        class="link-info fw-bold text-decoration-none">Urdu Translation</a></div>
+                <div class="col-lg-3 col-sm-6"><a href="#" class="link-info fw-bold text-decoration-none">Hadith</a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3 col-sm-6 pb-3"><a href="About.html"
+                        class="link-info fw-bold text-decoration-none">About Us</a></div>
+                <div class="col-lg-3  col-sm-6"><a href="Privacy.html"
+                        class="link-info fw-bold text-decoration-none">Privacy</a></div>
+                <div class="col-lg-1"><a href="#"><i class="bi bi-arrow-up-circle fs-1 text-info" title="Go Up"></i></a>
+                </div>
+            </div>
+            <div class="container-fluid text-white pt-1 border-top">
+                <p class="text-center">Copyright&copy;By Muhammad Roohullah 2022-2026 All Rights Reserved &nbsp; <a
+                        href="mailto:m.roohullah123@gmail.com" class="link-info text-decoration-none"><i
+                            class="bi bi-envelope"></i> Email</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+    <script>
+        // var currentindex = 0;
+
+        // fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/sections/1.json')
+        //     .then(res => res.json())
+        //     .then(data => {
+
+        //         const obj = data.hadiths;
+        //         function myfun() {
+        //             var maxresult = 50;
+        //             for (var i = 0; i < maxresult; i++) {
+
+        //                 const para = document.getElementById('para');
+        //                 const div1 = document.createElement('div');
+        //                 div1.setAttribute('class', 'container');
+        //                 div1.setAttribute('class', 'card');
+        //                 div1.setAttribute('class', 'mt-2');
+        //                 div1.setAttribute('class', 'mb-3');
+        //                 div1.style.border = "1px solid rgba(0,0,0,0.1)";
+        //                 const div2 = document.createElement('div');
+        //                 div2.setAttribute('class', 'card-body')
+        //                 const h4 = document.createElement('h4');
+        //                 const h2 = document.createElement('h2');
+        //                 h2.setAttribute('class', 'text-center')
+        //                 h2.setAttribute('class', 'text-info');
+        //                 // h2.style.borderBottom="1px solid blue"
+        //                 h2.innerHTML = "Hadith Number " + obj[i].hadithnumber;
+
+        //                 h4.innerHTML = obj[i + currentindex].text + ".";
+        //                 para.append(div1);
+        //                 div1.append(div2);
+        //                 div2.append(h2);
+        //                 div2.append(h4);
+        //                 document.getElementById('my-btn2').style.display = "none";
+        //                 document.getElementById('my-btn3').style.display = "none";
+        //                 document.getElementById('alert1').style.display = "none";
+
+
+
+
+        //                 //                 const div = document.createElement('div');
+        //                 //                 const h2 = document.createElement('h2');
+        //                 //                 h2.innerHTML = "Number" + obj[i].hadithnumber;
+        //                 //                 div.innerHTML = obj[i + currentindex].text;
+        //                 //                 div.setAttribute('class', 'myclass')
+
+        //                 //                 // const hr = document.createElement('hr');
+        //                 //                 var p = document.getElementById('para');
+        //                 //                 // div.append(hr)
+        //                 //                 p.append(h2)
+        //                 //                 p.append(div);
+
+        //             }
+        //             //             currentindex += maxresult;
+
+
+        //         }
+        //         myfun();
+        //     }
+        //     );
+
+        // var currentindex1 = 0;
+
+        // function myfun1() {
+        //     fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/sections/1.json')
+        //         .then(res => res.json())
+        //         .then(data => {
+
+        //             var maxresult1 = 100;
+        //             const obj1 = data.hadiths;
+        //             for (var i = 50; i < maxresult1; i++) {
+        //                 //     if (currentindex1 == 390 ) {
+        //                 //         alert("there is no more items");
+        //                 //     }
+        //                 const para = document.getElementById('para');
+        //                 const div1 = document.createElement('div');
+        //                 div1.setAttribute('class', 'container');
+        //                 div1.setAttribute('class', 'card');
+        //                 div1.setAttribute('class', 'mt-2');
+        //                 div1.setAttribute('class', 'mb-3');
+        //                 div1.style.border = "1px solid rgba(0,0,0,0.1)";
+        //                 const div2 = document.createElement('div');
+        //                 div2.setAttribute('class', 'card-body')
+        //                 const h4 = document.createElement('h4');
+        //                 const h2 = document.createElement('h2');
+        //                 h2.setAttribute('class', 'text-center')
+        //                 h2.setAttribute('class', 'text-info');
+        //                 // h2.style.borderBottom="1px solid blue"
+        //                 h2.innerHTML = "Hadith Number " + obj1[i].hadithnumber;
+
+        //                 h4.innerHTML = obj1[i + currentindex1].text + ".";
+        //                 para.append(div1);
+        //                 div1.append(div2);
+        //                 div2.append(h2);
+        //                 div2.append(h4);
+        //                 document.getElementById('my-btn').style.display = "none";
+        //                 document.getElementById('my-btn2').style.display = "block";
+        //                 document.getElementById('my-btn3').style.display = "none";
+        //                 document.getElementById('alert1').style.display = "none";
+
+
+
+
+
+        //             }
+        //             currentindex1 += maxresult1;
+
+        //         });
+
+        // }
+
+        // // Button 2 click
+
+        // var currentindex2 = 0;
+
+        // function myfun2() {
+        //     fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/sections/1.json')
+        //         .then(res => res.json())
+        //         .then(data => {
+
+        //             var maxresult2 = 150;
+        //             const obj2 = data.hadiths;
+        //             for (var i = 100; i < maxresult2; i++) {
+        //                 //     if (currentindex1 == 390 ) {
+        //                 //         alert("there is no more items");
+        //                 //     }
+        //                 const para = document.getElementById('para');
+        //                 const div1 = document.createElement('div');
+        //                 div1.setAttribute('class', 'container');
+        //                 div1.setAttribute('class', 'card');
+        //                 div1.setAttribute('class', 'mt-2');
+        //                 div1.setAttribute('class', 'mb-3');
+        //                 div1.style.border = "1px solid rgba(0,0,0,0.1)";
+        //                 const div2 = document.createElement('div');
+        //                 div2.setAttribute('class', 'card-body')
+        //                 const h4 = document.createElement('h4');
+        //                 const h2 = document.createElement('h2');
+        //                 h2.setAttribute('class', 'text-center')
+        //                 h2.setAttribute('class', 'text-info');
+        //                 // h2.style.borderBottom="1px solid blue"
+        //                 h2.innerHTML = "Hadith Number " + obj2[i].hadithnumber;
+
+        //                 h4.innerHTML = obj2[i + currentindex2].text + ".";
+        //                 para.append(div1);
+        //                 div1.append(div2);
+        //                 div2.append(h2);
+        //                 div2.append(h4);
+        //                 document.getElementById('my-btn').style.display = "none";
+        //                 document.getElementById('my-btn2').style.display = "none";
+        //                 document.getElementById('my-btn3').style.display = "block";
+        //                 document.getElementById('alert1').style.display = "none";
+
+
+
+
+
+        //             }
+        //             currentindex2 += maxresult2;
+
+        //         });
+
+        // }
+
+
+        // Button 3 click.................................
+
+        // var currentindex3 = 0;
+
+        // function myfun3() {
+        //     fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/sections/1.json')
+        //         .then(res => res.json())
+        //         .then(data => {
+
+        //             var maxresult3 = 390;
+        //             const obj3 = data.hadiths;
+        //             for (var i = 150; i < 390; i++) {
+        //                 //     if (currentindex1 == 390 ) {
+        //                 //         alert("there is no more items");
+        //                 //     }
+        //                 const para = document.getElementById('para');
+        //                 const div1 = document.createElement('div');
+        //                 div1.setAttribute('class', 'container');
+        //                 div1.setAttribute('class', 'card');
+        //                 div1.setAttribute('class', 'mt-2');
+        //                 div1.setAttribute('class', 'mb-3');
+        //                 div1.style.border = "1px solid rgba(0,0,0,0.1)";
+        //                 const div2 = document.createElement('div');
+        //                 div2.setAttribute('class', 'card-body')
+        //                 const h4 = document.createElement('h4');
+        //                 const h2 = document.createElement('h2');
+        //                 h2.setAttribute('class', 'text-center')
+        //                 h2.setAttribute('class', 'text-info');
+        //                 // h2.style.borderBottom="1px solid blue"
+        //                 h2.innerHTML = "Hadith Number " + obj3[i].hadithnumber;
+
+        //                 h4.innerHTML = obj3[i + currentindex3].text + ".";
+        //                 para.append(div1);
+        //                 div1.append(div2);
+        //                 div2.append(h2);
+        //                 div2.append(h4);
+        //                 document.getElementById('my-btn').style.display = "none";
+        //                 document.getElementById('my-btn2').style.display = "none";
+        //                 document.getElementById('my-btn3').style.display = "none";
+        //                 document.getElementById('alert1').style.display = "block";
+
+        //                 // const btn = document.getElementById('my-btn3');
+        //                 // btn.innerHTML = "End Of The Book";
+        //                 // btn.setAttribute('class', '')
+        //                 // btn.setAttribute('class', 'alert');
+        //                 // btn.setAttribute('class', 'alert-primary');
+        //                 // btn.setAttribute('class', 'alert-dismissible');
+        //                 // btn.setAttribute('class', 'fade');
+        //                 // btn.setAttribute('class', 'show');
+
+
+
+
+        //             }
+        //             currentindex3 += maxresult3;
+
+        //         });
+
+        // }
+      function section(val){
+        var maindiv = document.getElementById('hadithdiv')
+            var i = 1;
+            fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/sections/${val}.json`)
+                .then(response => response.json())
+                .then(json => {
+                    
+                    var sectionNumber = json.hadiths[0].reference.book;
+                    document.getElementById('sectionNumber').innerHTML= sectionNumber +"  ";
+                    var a = json.metadata.section;
+
+                    document.getElementById('bookName').innerHTML = a[`${val}`];
+                    document.getElementById('hadithBookName').innerHTML = a[`${val}`];
+
+
+                    // a.map(ni => {
+                    //     console.log(ni['1'])
+                    //  })
+                    var data = json.hadiths;
+                    data.map(m => {
+                        var div = document.createElement('div');
+                        
+                        div.setAttribute('class', 'm-3 p-5 shadow border border-5 border-white');
+                        
+                        
+
+                        div.innerHTML = `<h4><u class="text-info">Hadith No</u> ${m.hadithnumber}</h4> <br>` + m.text+".";
+                        div.style.borderRadius ='20px'
+                        div.style.backgroundColor ='rgb(247, 249, 249   )'
+                        div.style.fontSize='18px'
+                        div.style.textAlign = "justify";
+                        maindiv.append(div);
+                        document.getElementById('totalHadith').innerHTML = i++;
+                        // console.log('hello')
+                        // console.log(json)
+
+
+                    })
+                    // console.log(data)
+
+                })
+
+            // var a = json.metadata.section;
+            // console.log(a[1])
+            // a.map(n => {
+            //     console.log(n)
+            // })
+
+
+
+
+
+            // })
+        }
+        section(1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function sections(val) {
+            document.getElementById('hadithdiv').innerHTML = "";
+
+            var maindiv = document.getElementById('hadithdiv')
+            var i = 1;
+            fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/sections/${val}.json`)
+                .then(response => response.json())
+                .then(json => {
+                    
+                    var sectionNumber = json.hadiths[0].reference.book;
+                    document.getElementById('sectionNumber').innerHTML= sectionNumber +"  ";
+                    var a = json.metadata.section;
+
+                    document.getElementById('bookName').innerHTML = a[`${val}`];
+                    document.getElementById('hadithBookName').innerHTML = a[`${val}`];
+
+
+                    // a.map(ni => {
+                    //     console.log(ni['1'])
+                    //  })
+                    var data = json.hadiths;
+                    data.map(m => {
+                        var div = document.createElement('div');
+                        
+                        div.setAttribute('class', 'm-3 p-5 shadow border border-5 border-white');
+                        
+                        
+
+                        div.innerHTML = `<h4><u class="text-info">Hadith No</u> ${m.hadithnumber}</h4> <br>` + m.text+".";
+                        div.style.borderRadius ='20px'
+                        div.style.backgroundColor ='rgb(247, 249, 249   )'
+                        div.style.fontSize='18px'
+                        div.style.textAlign = "justify";
+                        maindiv.append(div);
+                        document.getElementById('totalHadith').innerHTML = i++;
+                        // console.log('hello')
+                        // console.log(json)
+
+
+                    })
+                    // console.log(data)
+
+                })
+
+            // var a = json.metadata.section;
+            // console.log(a[1])
+            // a.map(n => {
+            //     console.log(n)
+            // })
+
+
+
+
+
+            // })
+
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

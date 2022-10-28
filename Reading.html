@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- bootstrap offline -->
+    <link rel="stylesheet"
+        href="E:\first web\projects\bootstrap css html project\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/quran.png" type="image/x-icon">
+    <title>Recite</title>
+    <style>
+        .title4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    border-bottom: 5px solid #000;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <nav
+        class="navbar navbar-expand-lg navbar-light bg-light  border-bottom border-info border-top border-1 border-info fixed-top">
+        <div class="container">
+            <img src="images//img1.png" class="img-fluid fw-bold" width="60" alt="The Holy Quran">
+            <span class="fw-bold"> Online Quran Translation</span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto " style="font-size: 17px;">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" aria-current="page" href="Home.html"><i
+                                class="bi bi-house-door"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" href="#"><i class="bi bi-book"></i> Reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Urdu.html"><i class="bi bi-book-half"></i> Urdu
+                            translation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Hadith.html"> Sunan
+                            Abu-Dawud</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="About.html"><i class="bi bi-file-person-fill"></i> About
+                            Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="Privacy.html"><i class="bi bi-shield-check"></i> Privacy</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- End of Navigation -->
+
+    <!-- Slider Start -->
+    <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel"
+        style="margin-top:78px ;height: 500px;">
+        <div class="carousel-indicators text-white">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="height:500px;">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images//reading1.jpg" class="d-block w-100" alt="Slider"
+                    style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption  text-white">
+                    <h3>Narrated 'Uthman' (RA)</h3><br>
+                    <p class="fs-3">The Prophet Muhammad (sallala hu alaihi wasalam) said <br>"The best among
+                        you(Muslims) are those who learn the Quran and teach it.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images//reading2.jpg" class="d-block w-100" alt="..."
+                    style="height: 500px;object-fit: cover;">
+                <div class="carousel-caption text-white">
+                    <h3>Narrated Abu Mas'ud Al-Ansari (RA)</h3>
+                    <p class="fs-3">The Prophet Muhammad (sallala hu alaihi wasalam) said,<br> "if one recites the last
+                        two Verses of Surat-al-Baqara at night, it is sufficient for him(for the night).</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images//reading3.jpg" class="d-block w-100" alt="..."
+                    style="height:500px ;object-fit: cover;">
+                <div class="carousel-caption  text-white">
+                    <h3>Narrated 'Abdullah (RA)'</h3>
+                    <p class="fs-3">That the Prophet Muhammad (sallala hu alaihi wasalam) said to him "Recite the Quran
+                        to me"'Abdullah (RA) said, "Shall I recite (the Quran) to you while it has been Revealed to
+                        you?"He siad, " I like to hear if from others".</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Slider End -->
+
+
+    <!-- Recite Plasce start -->
+    <div class="container-fluid border-top border-primary">
+
+
+        <select class="container form-select form-select-lg mt-4 mb-3 p-3 border border-primary aria-label=" Default
+            select example" id="myselect" onchange="myfun()">
+            <option value="Al-Fatihah" selected>Select Surah</option>
+            <option value="Al-Fatihah">Al-Fatihah </option>
+            <option value="Al-Baqarah">Al-Baqarah </option>
+            <option value="Ali 'Imran">Ali-Imran </option>
+            <option value="An-Nisa">An-Nisa </option>
+            <option value="Al-Ma'idah">Al-Ma'idah </option>
+            <option value="Al-An'am">Al-An'am </option>
+            <option value="Al-A'raf">Al-A'raf </option>
+            <option value="Al-Anfal">Al-Anfal </option>
+            <option value="At-Tawbah">At-Tawbah </option>
+            <option value="Yunus">Yunus </option>
+            <option value="Hud">Hud</option>
+            <option value="Ar-Ra'd">Ar-Ra'd</option>
+            <option value="Ibrahim">Ibrahim</option>
+            <option value="Al-Hijr">Al-Hijr</option>
+            <option value="An-Nahl">An-Nahl</option>
+            <option value="Al-Isra">Al-Isra</option>
+            <option value="Al-Kahf">Al-Kahf</option>
+            <option value="Al-Kahf">Al-Kahf</option>
+            <option value="Maryam">Maryam</option>
+            <option value="Taha">Taha</option>
+            <option value="Al-Anbya">Al-Anbya</option>
+            <option value="Al-Hajj">Al-Hajj</option>
+            <option value="Al-Mu'minun">Al-Mu'minun</option>
+            <option value="An-Nur">An-Nur</option>
+            <option value="Al-Furqan">Al-Furqan</option>
+            <option value="Ash-Shu'ara">Ash-Shu'ara</option>
+            <option value="An-Naml">An-Naml</option>
+            <option value="Al-Qasas">Al-Qasas</option>
+            <option value="Al-'Ankabut">Al-'Ankabut</option>
+            <option value="Ar-Rum">Ar-Rum</option>
+            <option value="Luqman">Luqman</option>
+            <option value="As-Sajdah">As-Sajdah</option>
+            <option value="Al-Ahzab">Al-Ahzab</option>
+            <option value="Saba">Saba</option>
+            <option value="Fatir">Fatir</option>
+            <option value="Ya-Sin">Ya-Sin</option>
+            <option value="As-Saffat">As-Saffat</option>
+            <option value="Sad">Sad</option>
+            <option value="Az-Zumar">Az-Zumar</option>
+            <option value="Ghafir">Ghafir</option>
+            <option value="Fussilat">Fussilat</option>
+            <option value="Ash-Shuraa">Ash-Shuraa</option>
+            <option value="Az-Zukhruf">Az-Zukhruf</option>
+            <option value="Ad-Dukhan">Ad-Dukhan</option>
+            <option value="Al-Jathiyah">Al-Jathiyah</option>
+            <option value="Al-Ahqaf">Al-Ahqaf</option>
+            <option value="Muhammad">Muhammad</option>
+            <option value="Al-Fath">Al-Fath</option>
+            <option value="Al-Hujurat">Al-Hujurat</option>
+            <option value="Qaf">Qaf</option>
+            <option value="Adh-Dhariyat">Adh-Dhariyat</option>
+            <option value="At-Tur">At-Tur</option>
+            <option value="An-Najm">An-Najm</option>
+            <option value="Al-Qamar">Al-Qamar</option>
+            <option value="Ar-Rahman">Ar-Rahman</option>
+            <option value="Al-Waqi'ah">Al-Waqi'ah</option>
+            <option value="Al-Hadid">Al-Hadid</option>
+            <option value="Al-Mujadila">Al-Mujadila</option>
+            <option value="Al-Hashr">Al-Hashr</option>
+            <option value="Al-Mumtahanah">Al-Mumtahanah</option>
+            <option value="As-Saf">As-Saf</option>
+            <option value="Al-Jumu'ah">Al-Jumu'ah</option>
+            <option value="Al-Munafiqun">Al-Munafiqun</option>
+            <option value="At-Taghabun">At-Taghabun</option>
+            <option value="At-Talaq">At-Talaq</option>
+            <option value="At-Tahrim">At-Tahrim</option>
+            <option value="Al-Mulk">Al-Mulk</option>
+            <option value="Al-Qalam">Al-Qalam</option>
+            <option value="Al-Haqqah">Al-Haqqah</option>
+            <option value="Al-Ma'arij">Al-Ma'arij</option>
+            <option value="Nuh">Nuh</option>
+            <option value="Al-Jinn">Al-Jinn</option>
+            <option value="Al-Muzzammil">Al-Muzzammil</option>
+            <option value="Al-Muddaththir">Al-Muddaththir</option>
+            <option value="Al-Qiyamah">Al-Qiyamah</option>
+            <option value="Al-Insan">Al-Insan</option>
+            <option value="Al-Mursalat">Al-Mursalat</option>
+            <option value="An-Naba">An-Naba</option>
+            <option value="An-Nazi'at">An-Nazi'at</option>
+            <option value="'Abasa">Abasa</option>
+            <option value="At-Takwir">At-Takwir</option>
+            <option value="Al-Infitar">Al-Infitar</option>
+            <option value="Al-Mutaffifin">Al-Mutaffifin</option>
+            <option value="Al-Inshiqaq">Al-Inshiqaq</option>
+            <option value="Al-Buruj">Al-Buruj</option>
+            <option value="At-Tariq">At-Tariq</option>
+            <option value="Al-A'la">Al-A'la</option>
+            <option value="Al-Ghashiyah">Al-Ghashiyah</option>
+            <option value="Al-Fajr">Al-Fajr</option>
+            <option value="Al-Balad">Al-Balad</option>
+            <option value="Ash-Shams">Ash-Shams</option>
+            <option value="Al-Layl">Al-Layl</option>
+            <option value="Ad-Duhaa">Ad-Duhaa</option>
+            <option value="Ash-Sharh">Ash-Sharh</option>
+            <option value="At-Tin">At-Tin</option>
+            <option value="Al-'Alaq">Al-'Alaq</option>
+            <option value="Al-Qadr">Al-Qadr</option>
+            <option value="Al-Bayyinah">Al-Bayyinah</option>
+            <option value="Az-Zalzalah">Az-Zalzalah</option>
+            <option value="Al-'Adiyat">Al-'Adiyat</option>
+            <option value="Al-Qari'ah">Al-Qari'ah</option>
+            <option value="At-Takathur">At-Takathur</option>
+            <option value="Al-'Asr">Al-'Asr</option>
+            <option value="Al-Humazah">Al-Humazah</option>
+            <option value="Al-Fil">Al-Fil</option>
+            <option value="Quraysh">Quraysh</option>
+            <option value="Al-Ma'un">Al-Ma'un</option>
+            <option value="Al-Kawthar">Al-Kawthar</option>
+            <option value="Al-Kafirun">Al-Kafirun</option>
+            <option value="An-Nasr">An-Nasr</option>
+            <option value="Al-Masad">Al-Masad</option>
+            <option value="Al-Ikhlas">Al-Ikhlas</option>
+            <option value="Al-Falaq">Al-Falaq</option>
+            <option value="An-Nas">An-Nas</option>
+
+
+        </select>
+    </div>
+
+    <div class="container fs-5 rounded bg-light border border-primary mb-3 text-center ps-5 pt-3 pe-5 pb-5" id="info">
+        <div class="text-center">
+            <h1>SURAH INFORMATION</h1>
+        </div>
+        <div class="row border border-info p-2">
+            <div class="col-6">
+                Surah Number
+            </div>
+            <div class="col-6">
+                <span id="surahNumber"></span>
+            </div>
+
+        </div>
+
+        <div class="row border border-info p-2">
+            <div class="col-6">
+                Surah Name
+            </div>
+            <div class="col-6">
+                <span id="surahName"></span>
+            </div>
+
+        </div>
+
+        <div class="row border border-info p-2">
+            <div class="col-6">
+                Translation
+            </div>
+            <div class="col-6">
+                <span id="surahTranslation"></span>
+            </div>
+
+        </div>
+
+        <div class="row border border-info p-2">
+            <div class="col-6">
+                Revelation Place
+            </div>
+            <div class="col-6">
+                <span id="surahRevelation"></span>
+            </div>
+
+        </div>
+
+        <div class="row border border-info p-2">
+            <div class="col-6">
+                Total Verses
+            </div>
+            <div class="col-6">
+                <span id="totalVerses"></span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="surahContainer" class="container p-3 bg-light text-center rounded mb-2 border border-primary">
+        <h1 id="surahTitle" class="title4"></h1>
+
+    </div>
+
+    <div id="surahstart" class="container p-3 bg-light text-center rounded mb-2 border border-primary">
+        <h1 id="start"></h1>
+
+    </div>
+
+
+
+
+    <div id="myid" class="container border border-primary" style="background-color:rgb(245, 239, 238)">
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Recite place end -->
+
+    <!-- footer with links -->
+    <div class="container-fluid  text-white pt-5 pb-2" style="background-color:rgba(0,0,0,0.7) ;">
+        <div class="container fs-4">
+            <div class="row mb-5">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3 col-sm-6 pb-3"><a href="Home.html"
+                        class="link-info fw-bold text-decoration-none">Home</a></div>
+                <div class="col-lg-3 col-sm-6 "><a href="Reading.html"
+                        class="link-info fw-bold text-decoration-none">Reading</a></div>
+                <div class="col-lg-1"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3 col-sm-6 pb-3"><a href="Urdu.html"
+                        class="link-info fw-bold text-decoration-none">Urdu Translation</a></div>
+                <div class="col-lg-3 col-sm-6"><a href="Hadith.html"
+                        class="link-info fw-bold text-decoration-none">Hadith</a></div>
+                <div class="col-lg-1"></div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-3 col-sm-6 pb-3"><a href="About.html"
+                        class="link-info fw-bold text-decoration-none">About Us</a></div>
+                <div class="col-lg-3  col-sm-6"><a href="Privacy.html"
+                        class="link-info fw-bold text-decoration-none">Privacy</a></div>
+                <div class="col-lg-1"><a href="#"><i class="bi bi-arrow-up-circle fs-1 text-info" title="Go Up"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid text-white pt-1">
+                <p class="text-center">Copyright&copy;By Muhammad Roohullah 2022-2026 All Rights Reserved&nbsp; <a
+                        href="mailto:m.roohullah123@gmail.com" class="link-info text-decoration-none"><i
+                            class="bi bi-envelope text-info"></i> Email</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+        //     fetch('https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ur.json')
+        //   .then(response => response.json())
+        //   .then(data=>{
+        //     data.map(m=>{
+        //         // console.log(m);
+        //        m.verses.map(n=>{
+        //         var reading = document.getElementById('reading');
+        //         var div1 = document.createElement('div');
+        //         div1.innerHTML = n.text;
+        //         reading.append(div1)
+        //         console.log(n.text)
+
+        //        })
+
+        //     })
+        //   })
+
+        (function () {
+
+            fetch('https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ur.json')
+                .then(response => response.json())
+                .then(data => {
+                    // console.log(data)
+                    data.map(m => {
+                        // document.getElementById('surahContainer').innerHTML = '';
+                        
+                        if (m.transliteration == "Al-Fatihah") {
+                            // document.getElementById("info").innerHTML = '';
+                            document.getElementById('surahNumber').innerHTML = m.id;
+                            document.getElementById('surahName').innerHTML = m.transliteration;
+                            document.getElementById('surahTranslation').innerHTML = m.translation;
+                            if (m.type === "meccan") {
+                                document.getElementById('surahRevelation').innerHTML = "مکہ";
+                            } else {
+
+                                document.getElementById('surahRevelation').innerHTML = "مدینہ";
+                            }
+
+                            document.getElementById('totalVerses').innerHTML = m.total_verses;
+
+                        document.getElementById('surahTitle').innerHTML = m.transliteration;
+                        var Bismillah = 'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ';
+                        // console.log(m.transliteration)
+                        if(m.transliteration == 'Al-Fatihah' || m.transliteration ==='At-Tawbah'){
+                        
+                            document.getElementById('surahstart').style.display ="none";
+
+                        }else{
+                            document.getElementById('surahstart').style.display ="block";
+
+                            document.getElementById('start').innerHTML = Bismillah;
+
+
+                            
+                        }
+                        // console.log(m.verses[0].text)
+
+                            // var id = document.createElement('p').innerHTML = "سورہ نمبر: " + m.id;
+                            // var linebreak = document.createElement('br');
+                            // var linebreak2 = document.createElement('br');
+                            // var linebreak3 = document.createElement('br');
+                            // var linebreak4 = document.createElement('br');
+                            // var transliteration2 = document.createElement('p').innerHTML = m.transliteration + " :سورہ کا ترجمہ  ";
+                            // var mydiv = document.getElementById('info');
+                            // var translation2 = document.createElement('p').innerHTML = "سورہ کا ترجمہ: " + m.translation;
+                            // var type = document.createElement('p').innerHTML = m.type + " :  وحی کی جگہ";
+                            // var totalverses = document.createElement('p').innerHTML = "کل آیات: " + m.total_verses;
+
+                            // mydiv.append(id)
+                            // mydiv.append(linebreak)
+                            // // mydiv.append(transliteration2)
+                            // mydiv.append(linebreak2)
+
+                            // // mydiv.append(translation2)
+                            // mydiv.append(linebreak3)
+
+                            // // mydiv.append(type)
+                            // mydiv.append(linebreak4)
+
+                            // mydiv.append(totalverses)
+
+                            m.verses.map(n => {
+
+                                // document.getElementById('chapterName').innerHTML = m.transliteration;
+                                // document.getElementById('chapterTranslation').innerHTML = m.translation;
+                                // document.getElementById('chapterType').innerHTML = m.type;
+                                // document.getElementById('totalVerses').innerHTML = m.total_verses;
+                                // console.log(n)
+
+
+
+                                var div1 = document.createElement('div');
+                                div1.setAttribute('class', 'mb-2 mt-4 bg-light pt-3 pb-3 pe-4 ps-4 rounded text-justify')
+                                var myid = document.getElementById('myid');
+                                myid.setAttribute('class', 'container  text-end rounded fs-2 border mb-3 border-primary shadow-sm ');
+
+
+
+                                var verse = document.createElement("p").innerHTML = n.text;
+
+
+
+
+
+
+
+                                var circle = document.createElement('span');
+                                circle.innerHTML = n.id;
+                                circle.setAttribute('class', 'circle')
+
+                                // var br = document.createElement('br')
+                                // br.innerHTML = "<<br>";
+
+
+
+
+
+                                // var line = document.createElement('br').innerHTML = "<br>";
+
+                                document.getElementById("myid").append(div1);
+                                div1.append(verse);
+
+                                div1.append(circle)
+                                // myid.append(br)
+
+
+                            })
+                        }
+
+                    })
+                })
+        })()
+
+        function myfun() {
+            document.getElementById("myid").innerHTML = '';
+
+            var val = document.getElementById("myselect").value;
+            fetch('https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ur.json')
+                .then(response => response.json())
+                .then(data => {
+
+
+                    // console.log(data.)
+                    data.map(m => {
+
+
+
+
+                        if (m.transliteration == val) {
+                            // document.getElementById("info").innerHTML = '';
+                            document.getElementById('surahNumber').innerHTML = m.id;
+                            document.getElementById('surahName').innerHTML = m.transliteration;
+                            document.getElementById('surahTranslation').innerHTML = m.translation;
+                            if (m.type === "meccan") {
+                                document.getElementById('surahRevelation').innerHTML = "مکہ";
+                            } else {
+
+                                document.getElementById('surahRevelation').innerHTML = "مدینہ";
+                            }
+
+                            document.getElementById('totalVerses').innerHTML = m.total_verses;
+                        document.getElementById('surahTitle').innerHTML = m.transliteration;
+
+                        let Bismillah = 'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ';
+                        // console.log(Bismillah)
+                        console.log(m.verses[0])
+                        // console.log(m.transliteration)
+                        if(m.transliteration === 'Al-Fatihah' || m.transliteration ==='At-Tawbah' ){
+                        
+                            document.getElementById('surahstart').style.display ="none";
+
+                        }else{
+                            document.getElementById('surahstart').style.display ="block";
+
+                            document.getElementById('start').innerHTML = Bismillah;                            
+                        }
+
+
+                            // var id = document.createElement('p').innerHTML = "سورہ نمبر: " + m.id;
+                            // var linebreak = document.createElement('br');
+                            // var linebreak2 = document.createElement('br');
+                            // var linebreak3 = document.createElement('br');
+                            // var linebreak4 = document.createElement('br');
+                            // var transliteration2 = document.createElement('p').innerHTML = m.transliteration + " :سورہ کا ترجمہ  ";
+                            // var mydiv = document.getElementById('info');
+                            // var translation2 = document.createElement('p').innerHTML = "سورہ کا ترجمہ: " + m.translation;
+                            // var type = document.createElement('p').innerHTML = m.type + " :  وحی کی جگہ";
+                            // var totalverses = document.createElement('p').innerHTML = "کل آیات: " + m.total_verses;
+
+                            // mydiv.append(id)
+                            // mydiv.append(linebreak)
+                            // mydiv.append(transliteration2)
+                            // mydiv.append(linebreak2)
+
+                            // mydiv.append(translation2)
+                            // mydiv.append(linebreak3)
+
+                            // mydiv.append(type)
+                            // mydiv.append(linebreak4)
+
+                            // mydiv.append(totalverses)
+
+
+
+                            // console.log(m);
+                            m.verses.map(n => {
+
+                                //  document.getElementById('chapterNumber').innerHTML = m.id;
+                                // document.getElementById('chapterName').innerHTML = m.transliteration;
+                                // document.getElementById('chapterTranslation').innerHTML = m.translation;
+                                // document.getElementById('chapterType').innerHTML = m.type;
+                                // document.getElementById('totalVerses').innerHTML = m.total_verses;
+
+
+                                var div1 = document.createElement('div');
+                                div1.setAttribute('class', 'mb-2 mt-4 bg-light pt-3 pb-3 ps-4 pe-4 rounded text-justify')
+                                var myid = document.getElementById('myid');
+                                myid.setAttribute('class', 'container  text-end rounded fs-2 border mb-3 border-primary shadow-sm ');
+
+
+                                var verse = document.createElement("p").innerHTML = n.text;
+
+                                var span = document.createElement("span");
+                                span.innerHTML = n.id;
+                                span.setAttribute('class', 'circle')
+                                var a = document.createElement('br')
+                                a.innerHTML = "<br><br><br>";
+
+                                var line = document.createElement('hr');
+                                line.innerHTML = "<hr>"
+
+                                myid.append(div1);
+                                div1.append(verse)
+                                div1.append(span)
+                                div1.append(a)
+                                div1.append(line)
+
+                                // console.log(n)
+                                // var verse = document.createElement("p").innerText = n.text;
+                                // document.querySelector("#myid").append(verse)
+                            })
+                        }
+
+                    })
+                })
+
+        }
+    </script>
+</body>
+
+</html>
